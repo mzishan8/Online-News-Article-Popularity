@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online News Popularity</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-title" align="center" > <h2><b>Online News Popularity Prediction</b></h2></div>
+			<form class="jumbotron" action="/predict" method="post">
+				<b>Title</b>
+				<input class="form-control" type="text" name="title" placeholder="title" required="true">
+				<b>Date</b>
+				<input class="form-control" type="Date" name="date" required="true" >
+				<b>Text</b>
+				<textarea class="form-control" name="text" placeholder="text" required="true"></textarea>
+				<input class="form-control" type="number" name="image" required="true" placeholder="Number of images">
+				<input class="form-control" type="number" name="video" required="true" placeholder="Number of videos">
+				<input class="form-control" type="number" name="external_links" placeholder="Number of links">
+				<input class="form-control" type="number" name="max_external_share" placeholder="Maximum Number of shares in Links">
+				<input class="form-control" type="number" name="self_links" placeholder="Number of self Links">
+				<input class="form-control" type="number" name="max_self_share" placeholder="Maximum Number of shares in self Links">
+				<!-- Example single danger button -->
+				<b>Channel</b>
+				<select class="custom-select" id="inputGroupSelect04">
+				    <option value="1">LifeStyle</option>
+				    <option value="2">Entertainment</option>
+				    <option value="3">Business</option>
+				    <option value="4">Social Media</option>
+				    <option value="5">Tech</option>
+				    <option value="6">World</option>
+				</select>
+				<input class="form-control btn btn-primary" type="submit" name="submit" value="Predict" >
+			</form>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
