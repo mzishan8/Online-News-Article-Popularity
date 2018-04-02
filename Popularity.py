@@ -84,6 +84,7 @@ res = rfc_model.transform(unlabel_data)
 #     inputData.append(i * i +0.432);
 
 def predictPopularity(features):
+    print(features)
     features = tuple(features)
     feature_label = []    
     for i in range(0, len(features)):

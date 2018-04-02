@@ -21,16 +21,26 @@
 				<input class="form-control" type="number" name="external_links" placeholder="Number of links">
 				<input class="form-control" type="number" name="max_external_share" placeholder="Maximum Number of shares in Links">
 				<input class="form-control" type="number" name="self_links" placeholder="Number of self Links">
-				<input class="form-control" type="number" name="max_self_share" placeholder="Maximum Number of shares in self Links">
+				<input class="form-control" type="number" name="avg_self_share" placeholder="Average Number of shares in self Links">
 				<!-- Example single danger button -->
 				<b>Channel</b>
-				<select class="custom-select" id="inputGroupSelect04">
+				<select class="custom-select" id="inputGroupSelect04" name="channel">
 				    <option value="1">LifeStyle</option>
 				    <option value="2">Entertainment</option>
 				    <option value="3">Business</option>
 				    <option value="4">Social Media</option>
 				    <option value="5">Tech</option>
 				    <option value="6">World</option>
+				</select>
+				<b>Day</b>
+				<select class="custom-select" id="inputGroupSelect04" name="day">
+				    <option value="1">Monday</option>
+				    <option value="2">Tuesday</option>
+				    <option value="3">Wednesday</option>
+				    <option value="4">Thursday</option>
+				    <option value="5">Friday</option>
+				    <option value="6">Saturday</option>
+				    <option value="7">Sunday</option>
 				</select>
 				<input class="form-control btn btn-primary" type="submit" name="submit" value="Predict" >
 			</form>
