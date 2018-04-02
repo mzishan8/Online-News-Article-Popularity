@@ -25,7 +25,7 @@ def login():
 def predict():
    print(request.form)
    feature=[]
-   feature.append(0)
+   feature.append(731)
    feature.append(len(request.form["title"].split())+2)
    feature.append(len(request.form["text"].split()))
    print(len(set(request.form["text"].split())))
@@ -65,8 +65,13 @@ def predict():
    feature.append(abs(TextBlob(request.form["title"]).sentiment.subjectivity))
    feature.append(abs(TextBlob(request.form["title"]).sentiment.polarity))
    print(len(feature))
-   print(Popularity.predictPopularity(feature))
-   return "<H1> Your News Article will be popular</H1>"
+   result = ""
+   if Popularity.predictPopularity(feature) == 1.0:
+      result = "Popular"
+   else:
+      result = "Not Popular"
+   result = "<H1> Your News Article will be " +result +"</H1>"
+   return result
 
 
 
