@@ -45,35 +45,51 @@
     
     </div>
 	<div class="container" style="background:white">
-		<div class="card">
-			<div class="card-title" align="center" > <h2><b></b></h2></div>
-			<div class="container">
+			<br>
+			<div class="container col-lg-12 col-xs-12 col-sm-8 col-md-8">
 			<form class="form" action="/predict" method="post">
-				<b>Title</b>
-				<input class="form-control has-success" type="text" name="title" placeholder="title" required="true">
-				<br>
-				<b>Content</b>
-				<textarea class="form-control" name="text" placeholder="text" required="true"></textarea>
-				<br>
-				<b>Number of images</b>
-				<input class="form-control" type="number" name="image" required="true" placeholder="Number of images">
-				<br>
-				<b>Number of videos</b>
-				<input class="form-control" type="number" name="video" required="true" placeholder="Number of videos">
-				<br>
-				<b>Number of links</b>
-				<input class="form-control" type="number" name="external_links" placeholder="Number of links">
-				<br>
-				<b>Maximum number of shares in links</b>
-				<input class="form-control" type="number" name="max_external_share" placeholder="Maximum Number of shares in Links">
-				<br>
-				<b>Number of links that point to Mashable.com</b>
-				<input class="form-control" type="number" name="self_links" placeholder="Number of self Links">
-				<br>
-				<b>Average number of shares in the links</b>
-				<input class="form-control" type="number" name="avg_self_share" placeholder="Average Number of shares in self Links">
-				<!-- Example single danger button -->
-				<br>
+				<div class="col-lg-12">
+					<b>Title</b>
+					<input class="form-control has-success" type="text" name="title" placeholder="title" required="true">
+					<br>
+				</div>
+				<div class="col-lg-12">
+					<b>Content</b>
+					<textarea class="form-control" name="text" placeholder="text" required="true"></textarea>
+					<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<b>Number of images</b>
+					<input class="form-control" type="number" name="image" required="true" placeholder="Number of images">
+					<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<b>Number of videos</b>
+					<input class="form-control" type="number" name="video" required="true" placeholder="Number of videos">
+					<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<b>Number of links</b>
+					<input class="form-control" type="number" name="external_links" placeholder="Number of links">
+					<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<b>Maximum number of shares in links</b>
+					<input class="form-control" type="number" name="max_external_share" placeholder="Maximum Number of shares in Links">
+					<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<b>Number of links that point to Mashable.com</b>
+					<input class="form-control" type="number" name="self_links" placeholder="Number of self Links">
+					<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<b>Average number of shares in the links</b>
+					<input class="form-control" type="number" name="avg_self_share" placeholder="Average Number of shares in self Links">
+					<!-- Example single danger button -->
+					<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<b>Channel</b>
 				<select class="form-control" id="inputGroupSelect04" name="channel">
 				    <option value="1">LifeStyle</option>
@@ -83,8 +99,8 @@
 				    <option value="5">Tech</option>
 				    <option value="6">World</option>
 				</select>
-				<br>
-				<br>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<b>Day</b>
 				<select class="form-control" id="inputGroupSelect04" name="day">
 				    <option value="1">Monday</option>
@@ -95,9 +111,9 @@
 				    <option value="6">Saturday</option>
 				    <option value="7">Sunday</option>
 				</select><br><br>
+				</div>
 				<buttom class="btn btn-default btn-lg" type="submit" style="width: 100%" name="submit" value="Predict" >Predict</buttom>
 			</form>
-		</div>
 		</div>
 	</div>
 
