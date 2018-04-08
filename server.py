@@ -2,7 +2,7 @@ from flask import Flask, redirect, url_for, request, render_template
 
 import Popularity
 from textblob import TextBlob
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='/templates')
 
 @app.route('/success/<name>')
 def success(name):
@@ -70,8 +70,8 @@ def predict():
       result = "Popular"
    else:
       result = "Not Popular"
-   result = "<H1> Your News Article will be " +result +"</H1>"
-   return result
+   result = " Your News Article will be " +result 
+   return render_template('Result.html',message =result)
 
 
 

@@ -9,9 +9,10 @@
     
     <title>Paper Kit Tutorial by Creative Tim</title>
     
-    <link href="theme/bootstrap3/css/bootstrap.css" rel="stylesheet" />
-    <link href="theme/assets/css/ct-paper.css" rel="stylesheet"/>
-    <link href="theme/assets/css/demo.css" rel="stylesheet" /> 
+    <link href="{{ url_for('static', filename = 'theme/bootstrap3/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="
+    {{ url_for('static', filename = 'theme/assets/css/ct-paper.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename = 'theme/assets/css/demo.css') }}" rel="stylesheet" /> 
         
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -108,7 +109,7 @@
 				    <option value="7">Sunday</option>
 				</select><br><br>
 				</div>
-				<buttom class="btn btn-danger btn-lg" type="submit" style="width: 100%" name="submit" value="Predict" >Predict</buttom>
+				<button class="btn btn-danger btn-lg" type="submit" style="width: 100%" name="submit" value="Predict" >Predict</button>
 			</form>
 		</div>
 	</div>
